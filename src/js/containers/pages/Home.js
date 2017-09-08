@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import 'less/home.less';
-import Banner from '../components/Banner';
-import Slider from '../components/Slider';
-import News from '../components/News';
-import SchoolActivies from '../components/SchoolActivies';
+import Banner from '../../components/Banner';
+import Slider from '../../components/Slider';
+import News from '../../components/News';
+import SchoolActivies from '../../components/SchoolActivies';
 
 class Home extends Component {
     render(){
