@@ -1,3 +1,141 @@
-@flex{
+.linear-gradient(@topColor; @bottomColor; @dir: 180deg;) {
+  background-image: -webkit-linear-gradient(@dir, @topColor, @bottomColor);
+  background-image: -moz-linear-gradient(@dir, @topColor, @bottomColor);
+  background-image: -ms-linear-gradient(@dir, @topColor, @bottomColor);
+  background-image: -o-linear-gradient(@dir, @topColor, @bottomColor);
+  background-image: linear-gradient(@dir, @topColor, @bottomColor);
+}
 
+.flexbox() {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.inline-flexbox() {
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+}
+
+.flexgrow(@grow) {
+  flex-grow: @grow;
+  -moz-flex-grow: @grow;
+  -webkit-flex-grow: @grow;
+}
+
+.flexwrap(@wrap) {
+  flex-wrap: @wrap;
+  -moz-flex-wrap: @wrap;
+  -webkit-flex-wrap: @wrap;
+}
+
+.align-self(@pos) {
+  align-self: @pos;
+  -moz-align-self: @pos;
+  -webkit-align-self: @pos;
+}
+
+.flex(@grow:0, @wrap:0, @basis:0) {
+  flex: @grow @wrap @basis;
+  -moz-flex: @grow @wrap @basis;
+  -webkit-flex: @grow @wrap @basis;
+}
+
+.flex-initial() {
+  flex: initial;
+  -moz-flex: initial;
+  -webkit-flex: initial;
+}
+
+.align-items(@pos) {
+  align-items: @pos;
+  -moz-align-items: @pos;
+  -webkit-align-items: @pos;
+}
+
+.justify-content(@pos) {
+  justify-content: @pos;
+  -moz-justify-content: @pos;
+  -webkit-justify-content: @pos;
+}
+
+.flex-direction(@direction) {
+  flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  -moz-flex-direction: @direction;
+  -webkit-flex-direction: @direction;
+}
+
+.transition(@property) {
+  transition: @property;
+  -moz-transition: @property;
+  -webkit-transition: @property;
+}
+
+.transform(@translate) {
+  transform: @translate;
+  -moz-transform: @translate;
+  -webkit-transform: @translate;
+}
+
+.placeholderColor(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: @color;
+  }
+
+  &:-moz-placeholder { /* Firefox 19+ */
+    color: @color;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+}
+
+.mask(@svg) {
+  -webkit-mask: url('@{svg}');
+  mask: url('@{svg}');
+}
+
+.mask-size(@size) {
+  -webkit-mask-size: @size;
+  mask-size: @size;
+}
+
+.mask-repeat(@repeat) {
+  -webkit-mask-repeat: @repeat;
+  mask-repeat: @repeat;
+}
+
+.calc(@property, @expression) {
+  @property: -moz-calc(@expression);
+  @property: -webkit-calc(@expression);
+  @property: calc(@expression);
+}
+
+.svg-icon-position-y(@y){
+  -webkit-mask-position-y: @y;
+  mask-position-y: @y;
+}
+
+.svg-icon(@svg) {
+  .mask(@svg);
+  .mask-size(100%);
+  .mask-repeat(no-repeat);
+}
+
+.svg-icon-color(@color) {
+  background-color: @color;
+}
+
+.svg-icon-size(@size) {
+  width: @size;
+  height: @size;
 }
