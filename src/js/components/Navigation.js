@@ -15,19 +15,19 @@ const Navigation = (props) => (
                                             <Link to='/' className='link uk-link-reset uk-text-capitalize'>Home</Link>
                                     </li>
                                     <li>
-                                            <Link to='/' className='link uk-link-reset uk-text-capitalize'>About Us</Link>
+                                            <Link to='/aboutus' className='link uk-link-reset uk-text-capitalize'>About Us</Link>
                                     </li>
                                     <li>
                                             <Link to='/gallery' className='link uk-link-reset uk-text-capitalize'>Gallery</Link>
                                     </li>
                                     <li>
-                                            <Link to='/' className='link uk-link-reset uk-text-capitalize'>Students</Link>
+                                            <Link to='/students' className='link uk-link-reset uk-text-capitalize'>Students</Link>
                                     </li>
                                     <li>
-                                            <Link to='/' className='link uk-link-reset uk-text-capitalize'>NSC</Link>
+                                            <Link to='/nsc' className='link uk-link-reset uk-text-capitalize'>NSC</Link>
                                     </li>
                                     <li>
-                                            <Link to='/' className='link uk-link-reset uk-padding-remove-right uk-text-capitalize'>Contact Us</Link>
+                                            <Link to='/contactus' className='link uk-link-reset uk-padding-remove-right uk-text-capitalize'>Contact Us</Link>
                                     </li>
                             </ul>
                     </div>

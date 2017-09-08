@@ -11,8 +11,9 @@ class Slider extends Component {
 
     generateSlidesImage(slides) {
         return slides.map((slide, i)=>(
-            <div className="slide" key={i}>
-                <img className="uk-height-medium" src={slide.src}/>
+            <div className="slide uk-height-medium uk-background-norepeat uk-background-cover" key={i} style={{
+                'backgroundImage':`url(${slide.src})`
+            }}>
             </div>
         ))
     }
@@ -26,7 +27,7 @@ class Slider extends Component {
     render(){
         return(
             <div className="slider uk-position-relative uk-flex">
-                <div className="owl-carousel uk-width-3-4">
+                <div className="owl-carousel uk-width-3-4 uk-flex-middle uk-position-relative">
                     {
                         this.generateSlidesImage(this.props.slides)
                     }
@@ -48,7 +49,11 @@ class Slider extends Component {
                 loop: true,
                 margin: 10,
                 nav: true,
-                items: 1
+                items: 1,
+                navText:[
+                    "<a uk-slidenav-previous className='uk-light'></a>",
+                    "<a uk-slidenav-next className='uk-light'></a>"
+                ]
             });
 
             $(".slider > .list li").on("click", function () {
