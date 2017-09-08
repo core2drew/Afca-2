@@ -1,3 +1,27 @@
+@import '_mixins';
+
 .slider {
   background-color: white;
+  > .owl-carousel {
+    .flexbox();
+    > .owl-nav {
+      .flexbox();
+      .justify-content(space-between);
+      width:100%;
+      position:absolute;
+    }
+
+    > .owl-nav > .owl-prev > .uk-slidenav,
+    > .owl-nav > .owl-next > .uk-slidenav {
+      color:#fff;
+    }
+
+    > .owl-nav > .owl-prev {
+      margin-left:10px;
+    }
+
+    > .owl-nav > .owl-next {
+      margin-right:10px;
+    }
+  }
 }
