@@ -1,0 +1,19 @@
+@import "_mixins";
+
+.news-item {
+  > .readme {
+    .transition(all 0.3s ease);
+    opacity: 0;
+    cursor: pointer;
+    background-color: rgba(55, 128, 44, 0.8);
+    > .uk-header {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    > .readme {
+      opacity: 1;
+    }
+  }
+}
