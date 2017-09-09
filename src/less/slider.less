@@ -1,27 +1,62 @@
 @import '_mixins';
+@import '_variables';
 
 .slider {
-  background-color: white;
+  border-top: 7px solid @flat-green-color;
+  background-color: #fff;
+
+  > .list {
+    > .title {
+      background-color: @flat-green-color;
+      color: #fff
+    }
+    > .uk-list > .item {
+      cursor: pointer;
+    }
+    > .uk-list > .item:hover,
+    > .uk-list > .item.active{
+      font-weight:bold;
+    }
+  }
+
   > .owl-carousel {
     .flexbox();
     > .owl-nav {
       .flexbox();
       .justify-content(space-between);
-      width:100%;
-      position:absolute;
+      width: 100%;
+      position: absolute;
     }
 
     > .owl-nav > .owl-prev > .uk-slidenav,
     > .owl-nav > .owl-next > .uk-slidenav {
-      color:#fff;
+      color: #fff;
     }
 
     > .owl-nav > .owl-prev {
-      margin-left:10px;
+      margin-left: 10px;
     }
 
     > .owl-nav > .owl-next {
-      margin-right:10px;
+      margin-right: 10px;
+    }
+  }
+  > .details {
+    padding:15px 10px;
+    > .summary > .detail {
+      max-width: 130px;
+      max-height: 75px;
+      -webkit-line-clamp: 3;
+      margin-bottom: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+    }
+
+    > .readme {
+      background-color: @flat-blue-color;
+      color: #fff;
     }
   }
 }

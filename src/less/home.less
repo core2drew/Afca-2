@@ -1,7 +1,30 @@
+@import "_variables";
+
 #Home {
+  background-color:#f3f3f3;
   > #Content {
     > .slider {
       margin-top: -60px;
+    }
+
+    > .uk-grid {
+      > .column > .newslist,
+      > .column > .schoolactivitylist{
+        background-color:#fff;
+        padding-bottom:10px;
+      }
+
+      > .column > .newslist > .title,
+      > .column > .schoolactivitylist > .title{
+        background-color:@flat-green-color;
+        color:#fff;
+        padding:0 10px;
+      }
+
+      > .column > .newslist > .uk-description-list,
+      > .column > .schoolactivitylist > .uk-description-list{
+        padding:0 10px;;
+      }
     }
   }
 }
