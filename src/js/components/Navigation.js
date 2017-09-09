@@ -4,8 +4,8 @@ import 'less/navigation.less';
 
 const Navigation = (props) => (
     <div id='MainNav'>
-            <nav className="uk-container uk-navbar-container uk-container-expand uk-navbar uk-navbar-transparent uk-width-1-1" data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" data-uk-navbar>
-                    <a className="uk-navbar-left uk-logo uk-padding-small uk-padding-remove-vertical uk-padding-remove-left" href="#">
+            <nav className="uk-container uk-navbar-container uk-container-expand uk-navbar uk-navbar-transparent uk-width-1-1 uk-box-shadow-medium" data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" data-uk-navbar>
+                    <a className="uk-navbar-left uk-logo uk-padding-small uk-padding-remove-vertical uk-padding-remove-left uk-text-bold" href="#">
                         <img src={props.logoSrc} className="navlogo uk-margin-small-right"/>
                         {props.logoName}
                     </a>
