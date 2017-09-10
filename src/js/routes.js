@@ -8,7 +8,6 @@ const Routes = (
         <AfcaApp>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route exact path="/aboutus" component={AboutUs}/>
                 <Route exact path="/gallery" component={Gallery}/>
             </Switch>
         </AfcaApp>

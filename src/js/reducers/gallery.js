@@ -1,5 +1,4 @@
 var gallery = (state = {
-    message: "Gallery"
 }, action) => {
     switch (action.type) {
         case 'INIT':

@@ -4,8 +4,8 @@ import 'less/schoolactivitylist.less'
 
 const SchoolActivityList = (props) =>(
     <div className="schoolactivitylist">
-        <h3 className="uk-header title">School Activities</h3>
-        <dl className="uk-description-list">
+        <h4 className="uk-header title">School Activities</h4>
+        <dl className="uk-description-list uk-margin-remove">
             {
                 <SchoolActivityItem/>
             }

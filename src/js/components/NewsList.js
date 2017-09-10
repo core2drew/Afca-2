@@ -4,8 +4,8 @@ import 'less/newslist.less'
 
 const NewsList = (props) => (
     <div className="newslist">
-        <h3 className="uk-header title">News</h3>
-        <dl className="uk-description-list">
+        <h4 className="uk-header title">News</h4>
+        <dl className="uk-description-list uk-margin-remove">
             {
                 <NewsItems/>
             }

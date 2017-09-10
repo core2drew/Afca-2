@@ -8,22 +8,32 @@
     }
 
     > .uk-grid {
-      > .column > .newslist,
-      > .column > .schoolactivitylist{
+
+      > .column > .about{
+        background-color:#fff;
+      }
+
+      > .column > .uk-grid > .column > .newslist,
+      > .column > .uk-grid > .column > .schoolactivitylist{
         background-color:#fff;
         padding-bottom:10px;
       }
 
-      > .column > .newslist > .title,
-      > .column > .schoolactivitylist > .title{
+      > .column > .uk-grid > .column > .newslist > .title,
+      > .column > .uk-grid > .column > .schoolactivitylist > .title{
         background-color:@flat-green-color;
         color:#fff;
         padding:0 10px;
       }
 
-      > .column > .newslist > .uk-description-list,
-      > .column > .schoolactivitylist > .uk-description-list{
+      > .column > .uk-grid > .column > .newslist > .uk-description-list,
+      > .column > .uk-grid > .column > .schoolactivitylist > .uk-description-list{
         padding:0 10px;;
+      }
+
+      > .column > #DayVerse {
+        background-color:#ffee67;
+        color:#000;
       }
     }
   }
